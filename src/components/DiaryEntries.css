@@ -1,0 +1,91 @@
+/* src/components/DiaryEntries.css */
+.diary-entries {
+    margin: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+  
+  .entry-item {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+  }
+  
+  .entry-item:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .entry-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .entry-timestamp {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Additional Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.8s ease;
+  }
+  
+  /* Add a staggered fade-in animation for entries */
+  @keyframes staggeredFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .staggered-fade-in {
+    animation: staggeredFadeIn 0.6s ease both;
+  }
+  
+  /* Add a subtle scale-up animation on hover for entries */
+  .entry-item:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Entry Actions */
+  .entry-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .entry-actions button {
+    background-color: #ddd;
+    color: #555;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .entry-actions button:hover {
+    background-color: #ccc;
+  }
+  

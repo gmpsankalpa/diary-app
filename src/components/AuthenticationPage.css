@@ -1,0 +1,48 @@
+/* src/components/AuthenticationPage.css */
+.authentication-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+    /* Center the container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .authentication-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Style only the password field */
+  .authentication-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .authentication-container input#password {
+    width: calc(100% - 30px); /* Adjust the width as needed */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .authentication-container button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .authentication-container button:hover {
+    background-color: #45a049;
+  }
+  
